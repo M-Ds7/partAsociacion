@@ -1,24 +1,14 @@
-import logo from './logo.svg';
 import './App.css';
+import Profile from './Components/Profile';
+import ImgEmpresa from './Img/Empresa.jpg'
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <>
+    <div className="container-fluid p-4 animate__animated animate__fadeInUp">
+      <Profile name_company={"AmigoPeludos"} description={"LA empresa 'Amigos peludos' se se dedica a hacer tratamientos a las mascotas "} ImgEmpresa={ImgEmpresa}/>
     </div>
+    </>
   );
 }
 
